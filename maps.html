@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PEAK Map Index</title>
+    <meta name="description" content="All 12 PEAK levels: biome sequence, variant skins, and luggage/chest census.">
+    <link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+
+<div class="skyline">
+    <div class="logo-wrap"><img src="assets/img/peak-logo.png" alt="PEAK" width="900" height="283"></div>
+</div>
+
+<div class="wrap">
+    <div class="topbar">
+        <a class="brand" href="index.html">
+            <span class="mark">PeakAIO</span>
+            <span class="tag">Maps</span>
+        </a>
+        <nav class="tabs">
+            <a href="index.html">Today</a>
+            <a href="maps.html" class="active">Map Index</a>
+            <a href="items.html">Items</a>
+            <a href="accolades.html">Accolades</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero">
+            <span class="eyebrow">All 12 levels</span>
+            <h1>Map index</h1>
+            <p class="sub">Every baked level in the rotation: biome sequence, variant skins, and the static
+                luggage/chest census pulled from the decompiled scenes.</p>
+        </section>
+
+        <section class="panel" id="levels">
+            <h2> Levels &amp; biomes</h2>
+            <p class="desc">Jump straight to a level's luggage breakdown.</p>
+            <div class="table-wrap">
+                <table id="levels-table">
+                    <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Biome ID</th>
+                        <th>Sequence</th>
+                        <th>Variant skins</th>
+                        <th>Total containers</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="panel" id="luggage">
+            <h2> Luggage &amp; chest census</h2>
+            <p class="desc">Container counts per level and biome. Loot contents are rolled live each run and aren't
+                included.</p>
+            <div class="card kv-grid" id="luggage-totals"></div>
+            <div id="luggage-sections"></div>
+        </section>
+
+        <footer>
+            <span>PeakAIO, data extrcated from PEAK v2.1.a</span>
+            <a class="pagelink" href="index.html">← Back to today</a>
+        </footer>
+    </main>
+</div>
+
+<script src="assets/js/rotation.js"></script>
+<script>
+    const now = new Date();
+    const todayIndex = PEAK.computeDayIndex(now.getTime());
+    const today = PEAK.describeDay(todayIndex);
+
+    fetch("luggage_by_level_biome.json", {cache: "no-store"})
+        .then((r) => r.json())
+        .then((luggage) => renderAll(luggage))
+        .catch(() => renderAll({levels: {}}));
+
+    function renderAll(luggage) {
+        const levelsBody = document.querySelector("#levels-table tbody");
+        let rows = "";
+        for (let i = 0; i < 12; i++) {
+            const info = PEAK.describeDay(i);
+            const total = luggage.levels?.[`Level_${i}`]?.total ?? "N/A";
+            rows += `<tr id="level-${i}" class="${i === today.levelIndex ? "today" : ""}">
+        <td><a class="btn-chip" href="#luggage-Level_${i}">Level_${i} <span class="arrow">&#8595;</span></a></td>
+        <td>${info.biomeId}</td>
+        <td>${info.sequence}</td>
+        <td class="dim">${info.variants.join(", ")}</td>
+        <td class="num">${total}</td>
+      </tr>`;
+        }
+        levelsBody.innerHTML = rows;
+
+        const CATS = ["normal", "cursed", "clown", "epic", "respawn"];
+        let grandTotal = 0;
+        const grandByCat = Object.fromEntries(CATS.map((c) => [c, 0]));
+        const levelNames = Object.keys(luggage.levels || {}).sort((a, b) => {
+            const na = parseInt(a.split("_")[1], 10), nb = parseInt(b.split("_")[1], 10);
+            return na - nb;
+        });
+
+        function catCell(v, cat) {
+            const isBadge = cat === "cursed" || cat === "clown";
+            if (!isBadge) return `<td class="num">${v || "-"}</td>`;
+            const cls = cat === "cursed" ? "bad" : "warn";
+            return `<td class="badge-cell">${v ? `<span class="count-badge ${cls}">${v}</span>` : "-"}</td>`;
+        }
+
+        let sectionsHtml = "";
+        for (const levelName of levelNames) {
+            const lvl = luggage.levels[levelName];
+            grandTotal += lvl.total;
+            const levelNum = parseInt(levelName.split("_")[1], 10);
+            const biomeNames = Object.keys(lvl.by_biome).sort((a, b) => {
+                if (a === "Unknown") return 1;
+                if (b === "Unknown") return -1;
+                return a.localeCompare(b);
+            });
+            let rowsHtml = "";
+            for (const biome of biomeNames) {
+                const counts = lvl.by_biome[biome];
+                let rowTotal = 0;
+                for (const c of CATS) {
+                    const v = counts[c] || 0;
+                    grandByCat[c] += v;
+                    rowTotal += v;
+                }
+                rowsHtml += `<tr>
+          <td>${biome}</td>
+          ${catCell(counts.normal, "normal")}
+          ${catCell(counts.cursed, "cursed")}
+          ${catCell(counts.clown, "clown")}
+          ${catCell(counts.epic, "epic")}
+          ${catCell(counts.respawn, "respawn")}
+          <td class="num">${rowTotal}</td>
+        </tr>`;
+            }
+            sectionsHtml += `
+        <div class="card" id="luggage-${levelName}" style="margin-top:1rem;">
+          <h3 style="font-family:var(--display); margin:0 0 0.75rem; color:var(--ink); font-weight:400;">
+            ${levelName} <span class="pill">${lvl.total} containers</span>
+          </h3>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Biome</th><th class="num">Normal</th><th class="badge-cell">Cursed</th><th class="badge-cell">Clown</th><th class="num">Epic</th><th class="num">Respawn</th><th class="num">Total</th></tr></thead>
+              <tbody>${rowsHtml}</tbody>
+            </table>
+          </div>
+        </div>`;
+        }
+        document.getElementById("luggage-sections").innerHTML = sectionsHtml || `<p class="note">No luggage data loaded.</p>`;
+
+        document.getElementById("luggage-totals").innerHTML = [
+            ["Levels parsed", levelNames.length, true],
+            ["Total containers", grandTotal, true],
+            ["Normal", grandByCat.normal, false],
+            ["Cursed", grandByCat.cursed, false],
+            ["Clown", grandByCat.clown, false],
+            ["Epic", grandByCat.epic, false],
+            ["Respawn chests", grandByCat.respawn, false],
+        ].map(([label, val, big]) =>
+            `<div class="kv"><label>${label}</label><output class="${big ? "big" : ""}">${val}</output></div>`
+        ).join("");
+
+        if (location.hash) {
+            const target = document.querySelector(location.hash);
+            if (target) target.scrollIntoView({behavior: "smooth", block: "start"});
+        }
+    }
+</script>
+</body>
+</html>

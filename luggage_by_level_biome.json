@@ -1,0 +1,398 @@
+{
+  "levels": {
+    "Level_0": {
+      "total": 121,
+      "by_biome": {
+        "Tropics": {
+          "normal": 24,
+          "epic": 1,
+          "cursed": 2,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Swamp": {
+          "epic": 3,
+          "normal": 25,
+          "cursed": 1,
+          "respawn": 1
+        },
+        "Alpine": {
+          "normal": 28,
+          "epic": 1,
+          "cursed": 1,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Shore": {
+          "normal": 23,
+          "cursed": 2,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Unknown": {
+          "epic": 3
+        }
+      }
+    },
+    "Level_1": {
+      "total": 208,
+      "by_biome": {
+        "Mesa": {
+          "normal": 95,
+          "epic": 5,
+          "cursed": 3,
+          "respawn": 1
+        },
+        "Roots": {
+          "normal": 41,
+          "epic": 3,
+          "cursed": 2,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Shore": {
+          "normal": 20,
+          "epic": 2,
+          "respawn": 1
+        },
+        "Swamp": {
+          "normal": 19,
+          "epic": 6,
+          "cursed": 4,
+          "respawn": 1
+        },
+        "Unknown": {
+          "epic": 3
+        }
+      }
+    },
+    "Level_2": {
+      "total": 192,
+      "by_biome": {
+        "Mesa": {
+          "normal": 95,
+          "epic": 3,
+          "cursed": 2,
+          "clown": 3,
+          "respawn": 1
+        },
+        "Swamp": {
+          "normal": 25,
+          "epic": 2,
+          "cursed": 3,
+          "clown": 2,
+          "respawn": 1
+        },
+        "Tropics": {
+          "normal": 26,
+          "cursed": 2,
+          "respawn": 1
+        },
+        "Shore": {
+          "epic": 1,
+          "normal": 21,
+          "respawn": 1
+        },
+        "Unknown": {
+          "epic": 3
+        }
+      }
+    },
+    "Level_3": {
+      "total": 138,
+      "by_biome": {
+        "Shore": {
+          "normal": 20,
+          "epic": 3,
+          "cursed": 2,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Alpine": {
+          "normal": 24,
+          "epic": 3,
+          "cursed": 3,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Roots": {
+          "normal": 40,
+          "epic": 4,
+          "respawn": 1
+        },
+        "Swamp": {
+          "normal": 24,
+          "epic": 3,
+          "clown": 3,
+          "respawn": 1
+        },
+        "Unknown": {
+          "epic": 3
+        }
+      }
+    },
+    "Level_4": {
+      "total": 193,
+      "by_biome": {
+        "Mesa": {
+          "normal": 89,
+          "epic": 4,
+          "cursed": 4,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Tropics": {
+          "normal": 37,
+          "epic": 1,
+          "respawn": 1
+        },
+        "Swamp": {
+          "normal": 16,
+          "epic": 4,
+          "cursed": 5,
+          "clown": 3,
+          "respawn": 1
+        },
+        "Shore": {
+          "normal": 21,
+          "epic": 1,
+          "respawn": 1
+        },
+        "Unknown": {
+          "epic": 3
+        }
+      }
+    },
+    "Level_5": {
+      "total": 119,
+      "by_biome": {
+        "Swamp": {
+          "normal": 26,
+          "epic": 3,
+          "cursed": 1,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Alpine": {
+          "epic": 2,
+          "normal": 25,
+          "cursed": 2,
+          "clown": 2,
+          "respawn": 1
+        },
+        "Shore": {
+          "epic": 5,
+          "normal": 17,
+          "respawn": 1
+        },
+        "Tropics": {
+          "normal": 23,
+          "epic": 1,
+          "cursed": 4,
+          "respawn": 1
+        },
+        "Unknown": {
+          "epic": 3
+        }
+      }
+    },
+    "Level_6": {
+      "total": 140,
+      "by_biome": {
+        "Swamp": {
+          "normal": 23,
+          "epic": 3,
+          "cursed": 1,
+          "clown": 3,
+          "respawn": 1
+        },
+        "Shore": {
+          "normal": 22,
+          "epic": 1,
+          "cursed": 2,
+          "respawn": 1
+        },
+        "Roots": {
+          "normal": 42,
+          "epic": 1,
+          "cursed": 4,
+          "respawn": 1
+        },
+        "Alpine": {
+          "normal": 25,
+          "epic": 2,
+          "cursed": 2,
+          "clown": 2,
+          "respawn": 1
+        },
+        "Unknown": {
+          "epic": 3
+        }
+      }
+    },
+    "Level_7": {
+      "total": 211,
+      "by_biome": {
+        "Roots": {
+          "normal": 38,
+          "epic": 6,
+          "cursed": 2,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Swamp": {
+          "normal": 23,
+          "epic": 6,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Mesa": {
+          "normal": 100,
+          "epic": 3,
+          "cursed": 2,
+          "respawn": 1
+        },
+        "Shore": {
+          "normal": 20,
+          "epic": 1,
+          "cursed": 1,
+          "respawn": 1
+        },
+        "Unknown": {
+          "epic": 3
+        }
+      }
+    },
+    "Level_8": {
+      "total": 182,
+      "by_biome": {
+        "Mesa": {
+          "normal": 86,
+          "epic": 8,
+          "cursed": 1,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Shore": {
+          "normal": 21,
+          "cursed": 1,
+          "respawn": 1
+        },
+        "Swamp": {
+          "normal": 24,
+          "epic": 1,
+          "cursed": 4,
+          "respawn": 1
+        },
+        "Tropics": {
+          "normal": 25,
+          "epic": 2,
+          "cursed": 1,
+          "respawn": 1
+        },
+        "Unknown": {
+          "epic": 3
+        }
+      }
+    },
+    "Level_9": {
+      "total": 138,
+      "by_biome": {
+        "Alpine": {
+          "normal": 28,
+          "epic": 2,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Shore": {
+          "normal": 24,
+          "epic": 1,
+          "cursed": 1,
+          "respawn": 1
+        },
+        "Roots": {
+          "normal": 43,
+          "epic": 1,
+          "cursed": 1,
+          "respawn": 1
+        },
+        "Swamp": {
+          "normal": 20,
+          "epic": 2,
+          "cursed": 4,
+          "clown": 3,
+          "respawn": 1
+        },
+        "Unknown": {
+          "epic": 3
+        }
+      }
+    },
+    "Level_10": {
+      "total": 202,
+      "by_biome": {
+        "Mesa": {
+          "normal": 93,
+          "epic": 4,
+          "cursed": 3,
+          "clown": 2,
+          "respawn": 1
+        },
+        "Swamp": {
+          "normal": 22,
+          "epic": 5,
+          "cursed": 1,
+          "clown": 2,
+          "respawn": 1
+        },
+        "Shore": {
+          "normal": 21,
+          "epic": 1,
+          "respawn": 1
+        },
+        "Roots": {
+          "normal": 37,
+          "epic": 3,
+          "cursed": 1,
+          "respawn": 1
+        },
+        "Unknown": {
+          "epic": 3
+        }
+      }
+    },
+    "Level_11": {
+      "total": 118,
+      "by_biome": {
+        "Shore": {
+          "normal": 20,
+          "epic": 1,
+          "cursed": 1,
+          "respawn": 1
+        },
+        "Alpine": {
+          "normal": 28,
+          "cursed": 1,
+          "clown": 2,
+          "respawn": 1
+        },
+        "Swamp": {
+          "normal": 23,
+          "epic": 5,
+          "cursed": 1,
+          "clown": 1,
+          "respawn": 1
+        },
+        "Tropics": {
+          "normal": 25,
+          "epic": 1,
+          "cursed": 2,
+          "respawn": 1
+        },
+        "Unknown": {
+          "epic": 3
+        }
+      }
+    }
+  }
+}

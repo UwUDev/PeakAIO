@@ -1,0 +1,3209 @@
+{
+  "items": [
+    {
+      "file": "Airplane Food",
+      "name": "Airline Food",
+      "itemID": 0,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [
+        "Packaged food"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Ancient)",
+        "Luggage (Citadel)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [
+        {
+          "status": "Stamina",
+          "percent": 40.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Airplane_Food.webp"
+    },
+    {
+      "file": "AloeVera",
+      "name": "Aloe Vera",
+      "itemID": 101,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "use",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Hot",
+          "percent": -50.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/AloeVera.webp"
+    },
+    {
+      "file": "AncientIdol",
+      "name": "Ancient Idol",
+      "itemID": 47,
+      "weight": 16,
+      "weightPercent": 40.0,
+      "prompt": "",
+      "tags": [
+        "Mystical",
+        "Golden idol"
+      ],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/AncientIdol.webp"
+    },
+    {
+      "file": "RopeShooterAnti",
+      "name": "anti-rope cannon",
+      "itemID": 64,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "shoot",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Cursed)",
+        "Respawn coffin"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/RopeShooterAnti.webp"
+    },
+    {
+      "file": "Anti-Rope Spool",
+      "name": "anti-rope spool",
+      "itemID": 1,
+      "weight": -1,
+      "weightPercent": -2.5,
+      "prompt": "tie knot",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Cursed)",
+        "Respawn coffin"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Anti-Rope_Spool.webp"
+    },
+    {
+      "file": "AntiZooka",
+      "name": "Anti-Zooka",
+      "itemID": 192,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "shoot",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Ancient)",
+        "Luggage (Cursed)",
+        "Respawn coffin"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/AntiZooka.webp"
+    },
+    {
+      "file": "Antidote",
+      "name": "Antidote",
+      "itemID": 2,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "drink",
+      "tags": [],
+      "rarity": "Rare",
+      "spawnPools": [
+        "Luggage (Roots)",
+        "Luggage (Tropics)"
+      ],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": -35.0,
+          "color": "green"
+        },
+        {
+          "status": "Hot",
+          "percent": -10.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Antidote.webp"
+    },
+    {
+      "file": "Parachute",
+      "name": "Auto-Parachute",
+      "itemID": 176,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Epic",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Parachute.webp"
+    },
+    {
+      "file": "Balloon",
+      "name": "Balloon",
+      "itemID": 105,
+      "weight": -2,
+      "weightPercent": -5.0,
+      "prompt": "USE",
+      "tags": [],
+      "rarity": "Epic",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Clown)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Balloon.webp"
+    },
+    {
+      "file": "BalloonBunch",
+      "name": "Balloon Bunch",
+      "itemID": 37,
+      "weight": -6,
+      "weightPercent": -15.0,
+      "prompt": "USE",
+      "tags": [],
+      "rarity": "Mythic",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Clown)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/BalloonBunch.webp"
+    },
+    {
+      "file": "Bandages",
+      "name": "Bandages",
+      "itemID": 7,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "heal injuries",
+      "tags": [],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [
+        {
+          "status": "Injury",
+          "percent": -30.0,
+          "color": "red"
+        }
+      ],
+      "icon": "assets/img/items/Bandages.webp"
+    },
+    {
+      "file": "Basketball",
+      "name": "Basketball",
+      "itemID": 31,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Basketball.webp"
+    },
+    {
+      "file": "Beehive",
+      "name": "Beehive",
+      "itemID": 8,
+      "weight": 4,
+      "weightPercent": 10.0,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Beehive.webp"
+    },
+    {
+      "file": "Berrynana Peel Blue Variant",
+      "name": "Berrynana Peel",
+      "itemID": 91,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Berrynana_Peel_Blue_Variant.webp"
+    },
+    {
+      "file": "Berrynana Peel Brown Variant",
+      "name": "Berrynana Peel",
+      "itemID": 92,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Berrynana_Peel_Brown_Variant.webp"
+    },
+    {
+      "file": "Berrynana Peel Pink Variant",
+      "name": "Berrynana Peel",
+      "itemID": 39,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Berrynana_Peel_Pink_Variant.webp"
+    },
+    {
+      "file": "Berrynana Peel Yellow",
+      "name": "Berrynana Peel",
+      "itemID": 94,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Luggage (Clown)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Berrynana_Peel_Yellow.webp"
+    },
+    {
+      "file": "NestEgg",
+      "name": "Big Egg",
+      "itemID": 57,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "",
+      "tags": [
+        "Gourmand requirement"
+      ],
+      "rarity": "Common",
+      "spawnPools": [
+        "Nest"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/NestEgg.webp"
+    },
+    {
+      "file": "Lollipop",
+      "name": "Big Lollipop",
+      "itemID": 44,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "lick",
+      "tags": [
+        "Packaged food"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Ancient)",
+        "Luggage (Citadel)",
+        "Luggage (Clown)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Lollipop.webp"
+    },
+    {
+      "file": "Lollipop_Prop",
+      "name": "Big Lollipop",
+      "itemID": 139,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "lick",
+      "tags": [
+        "Packaged food"
+      ],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Lollipop_Prop.webp"
+    },
+    {
+      "file": "BingBong",
+      "name": "Bing Bong",
+      "itemID": 13,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "ask",
+      "tags": [
+        "BingBong"
+      ],
+      "rarity": "Ridiculously Rare",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/BingBong.webp"
+    },
+    {
+      "file": "BingBong_Prop Variant",
+      "name": "Bing Bong",
+      "itemID": 124,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "ask",
+      "tags": [
+        "BingBong"
+      ],
+      "rarity": "Ridiculously Rare",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/BingBong_Prop_Variant.webp"
+    },
+    {
+      "file": "Binoculars",
+      "name": "Binoculars",
+      "itemID": 14,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "look",
+      "tags": [],
+      "rarity": "Mythic",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Binoculars.webp"
+    },
+    {
+      "file": "Binoculars_Prop",
+      "name": "Binoculars",
+      "itemID": 125,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "look",
+      "tags": [],
+      "rarity": "Mythic",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Binoculars_Prop.webp"
+    },
+    {
+      "file": "EggTurkey",
+      "name": "Bird",
+      "itemID": 114,
+      "weight": 4,
+      "weightPercent": 10.0,
+      "prompt": "eat",
+      "tags": [
+        "Bird"
+      ],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/EggTurkey.webp"
+    },
+    {
+      "file": "C_Bishop B",
+      "name": "Bishop",
+      "itemID": 127,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Bishop_B.webp"
+    },
+    {
+      "file": "C_Bishop W",
+      "name": "Bishop",
+      "itemID": 128,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Bishop_W.webp"
+    },
+    {
+      "file": "C_Bishop_f Variant",
+      "name": "Bishop",
+      "itemID": 118,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Bishop_f_Variant.webp"
+    },
+    {
+      "file": "Clusterberry Black",
+      "name": "Black Clusterberry",
+      "itemID": 19,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Common",
+      "spawnPools": [
+        "Spiky vine"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Clusterberry_Black.webp"
+    },
+    {
+      "file": "HealingDart Variant",
+      "name": "Blowgun",
+      "itemID": 70,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "shoot",
+      "tags": [],
+      "rarity": "Mythic",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/HealingDart_Variant.webp"
+    },
+    {
+      "file": "Berrynana Blue",
+      "name": "Blue Berrynana",
+      "itemID": 9,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Rare",
+      "spawnPools": [
+        "Jungle vine"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Berrynana_Blue.webp"
+    },
+    {
+      "file": "Shroomberry_Blue",
+      "name": "Blue Shroomberry",
+      "itemID": 158,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry",
+        "Mushroom"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Spores",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/Shroomberry_Blue.webp"
+    },
+    {
+      "file": "BounceShroom",
+      "name": "Bounce Fungus",
+      "itemID": 79,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [
+        "Redwood"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/BounceShroom.webp"
+    },
+    {
+      "file": "Berrynana Brown",
+      "name": "Brown Berrynana",
+      "itemID": 10,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Rare",
+      "spawnPools": [
+        "Jungle vine"
+      ],
+      "effects": [
+        {
+          "status": "Stamina",
+          "percent": 10.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Berrynana_Brown.webp"
+    },
+    {
+      "file": "Bugle",
+      "name": "Bugle",
+      "itemID": 15,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "use",
+      "tags": [],
+      "rarity": "Epic",
+      "spawnPools": [
+        "Luggage (Clown)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Bugle.webp"
+    },
+    {
+      "file": "Bugle_Prop Variant",
+      "name": "Bugle",
+      "itemID": 126,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "use",
+      "tags": [],
+      "rarity": "Epic",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Bugle_Prop_Variant.webp"
+    },
+    {
+      "file": "Bugle_Magic",
+      "name": "Bugle of Friendship",
+      "itemID": 16,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "play",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Cursed)",
+        "Respawn coffin"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Bugle_Magic.webp"
+    },
+    {
+      "file": "Mushroom Lace Poison",
+      "name": "Bugle Shroom",
+      "itemID": 89,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Mushroom"
+      ],
+      "rarity": "Rare",
+      "spawnPools": [
+        "Mushroom cluster"
+      ],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 20.0,
+          "color": "green",
+          "overSeconds": 8.0,
+          "delaySeconds": 10.0
+        }
+      ],
+      "icon": "assets/img/items/Mushroom_Lace_Poison.webp"
+    },
+    {
+      "file": "Mushroom Lace",
+      "name": "Bugle Shroom",
+      "itemID": 93,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Mushroom"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Mushroom cluster"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Mushroom_Lace.webp"
+    },
+    {
+      "file": "Mushroom Normie Poison",
+      "name": "Button Shroom",
+      "itemID": 97,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Mushroom"
+      ],
+      "rarity": "Rare",
+      "spawnPools": [
+        "Mushroom cluster"
+      ],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 30.0,
+          "color": "green",
+          "overSeconds": 12.0,
+          "delaySeconds": 10.0
+        }
+      ],
+      "icon": "assets/img/items/Mushroom_Normie_Poison.webp"
+    },
+    {
+      "file": "Mushroom Normie",
+      "name": "Button Shroom",
+      "itemID": 102,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Mushroom"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Mushroom cluster"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Mushroom_Normie.webp"
+    },
+    {
+      "file": "CactusBall",
+      "name": "Cactus",
+      "itemID": 48,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "",
+      "tags": [],
+      "rarity": null,
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/CactusBall.webp"
+    },
+    {
+      "file": "Candle",
+      "name": "Candlestick",
+      "itemID": 171,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "light",
+      "tags": [],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Luggage (Citadel)",
+        "Luggage (Gloom)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Candle.webp"
+    },
+    {
+      "file": "ChainShooter",
+      "name": "Chain Launcher",
+      "itemID": 17,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "shoot",
+      "tags": [],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Climber)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/ChainShooter.webp"
+    },
+    {
+      "file": "Flag_Plantable_Checkpoint",
+      "name": "Checkpoint Flag",
+      "itemID": 30,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "Plant",
+      "tags": [],
+      "rarity": "Mythic",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Flag_Plantable_Checkpoint.webp"
+    },
+    {
+      "file": "Mushroom Chubby",
+      "name": "Chubby Shroom",
+      "itemID": 83,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Mushroom"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Mushroom cluster"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Mushroom_Chubby.webp"
+    },
+    {
+      "file": "ClimbingChalk",
+      "name": "Climbing Chalk",
+      "itemID": 116,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "read",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": null
+    },
+    {
+      "file": "CloudFungus",
+      "name": "Cloud Fungus",
+      "itemID": 117,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [
+        "Redwood"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/CloudFungus.webp"
+    },
+    {
+      "file": "Mushroom Cluster Poison",
+      "name": "Cluster Shroom",
+      "itemID": 84,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Mushroom"
+      ],
+      "rarity": "Rare",
+      "spawnPools": [
+        "Mushroom cluster"
+      ],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 40.0,
+          "color": "green",
+          "overSeconds": 16.0,
+          "delaySeconds": 10.0
+        }
+      ],
+      "icon": "assets/img/items/Mushroom_Cluster_Poison.webp"
+    },
+    {
+      "file": "Mushroom Cluster",
+      "name": "Cluster Shroom",
+      "itemID": 88,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Mushroom"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Mushroom cluster"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Mushroom_Cluster.webp"
+    },
+    {
+      "file": "Item_Coconut",
+      "name": "Coconut",
+      "itemID": 36,
+      "weight": 5,
+      "weightPercent": 12.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [
+        "Coconut tree"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Item_Coconut.webp"
+    },
+    {
+      "file": "Item_Coconut_half",
+      "name": "Coconut Half",
+      "itemID": 55,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [
+        "Gourmand requirement"
+      ],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Hot",
+          "percent": -30.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Item_Coconut_half.webp"
+    },
+    {
+      "file": "Compass",
+      "name": "Compass",
+      "itemID": 23,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "use",
+      "tags": [],
+      "rarity": "Mythic",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Compass.webp"
+    },
+    {
+      "file": "Shell Big",
+      "name": "Conch",
+      "itemID": 69,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Shell_Big.webp"
+    },
+    {
+      "file": "Cure-All",
+      "name": "Cure-All",
+      "itemID": 24,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "drink",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Cursed)",
+        "Respawn coffin"
+      ],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": -35.0,
+          "color": "green"
+        },
+        {
+          "status": "Injury",
+          "percent": -35.0,
+          "color": "red"
+        },
+        {
+          "status": "Drowsy",
+          "percent": -35.0,
+          "color": "purple"
+        },
+        {
+          "status": "Cold",
+          "percent": -35.0,
+          "color": "teal"
+        },
+        {
+          "status": "Hot",
+          "percent": -35.0,
+          "color": "orange"
+        },
+        {
+          "status": "Hunger",
+          "percent": -20.0,
+          "color": "gold"
+        },
+        {
+          "status": "Curse",
+          "percent": -5.0,
+          "color": "purple"
+        }
+      ],
+      "icon": "assets/img/items/Cure-All.webp"
+    },
+    {
+      "file": "Cursed Skull",
+      "name": "Cursed Skull",
+      "itemID": 25,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "commune",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Cursed)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Cursed_Skull.webp"
+    },
+    {
+      "file": "Dynamite",
+      "name": "Dynamite",
+      "itemID": 106,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "light",
+      "tags": [],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Clown)",
+        "Luggage (Mesa)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Dynamite.webp"
+    },
+    {
+      "file": "Egg",
+      "name": "Egg",
+      "itemID": 26,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [
+        "Gourmand requirement"
+      ],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Egg.webp"
+    },
+    {
+      "file": "EggRaven",
+      "name": "Egg",
+      "itemID": 177,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [
+        "Gourmand requirement"
+      ],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/EggRaven.webp"
+    },
+    {
+      "file": "Energy Drink",
+      "name": "Energy Drink",
+      "itemID": 27,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "drink",
+      "tags": [
+        "Packaged food"
+      ],
+      "rarity": "Rare",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Ancient)",
+        "Luggage (Citadel)",
+        "Luggage (Climber)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [
+        {
+          "status": "Hot",
+          "percent": -30.0,
+          "color": "orange"
+        },
+        {
+          "status": "Drowsy",
+          "percent": -100.0,
+          "color": "purple"
+        }
+      ],
+      "icon": "assets/img/items/Energy_Drink.webp"
+    },
+    {
+      "file": "Lantern_Faerie",
+      "name": "Faerie Lantern",
+      "itemID": 43,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "light",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Cursed)",
+        "Respawn coffin"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Lantern_Faerie.webp"
+    },
+    {
+      "file": "FirstAidKit",
+      "name": "First Aid Kit",
+      "itemID": 29,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "heal injuries",
+      "tags": [],
+      "rarity": "Epic",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Climber)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [
+        {
+          "status": "Injury",
+          "percent": -100.0,
+          "color": "red"
+        },
+        {
+          "status": "Poison",
+          "percent": -100.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/FirstAidKit.webp"
+    },
+    {
+      "file": "Flare",
+      "name": "Flare",
+      "itemID": 32,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "light",
+      "tags": [],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Flare.webp"
+    },
+    {
+      "file": "FortifiedMilk",
+      "name": "Fortified Milk",
+      "itemID": 152,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "drink",
+      "tags": [
+        "Packaged food"
+      ],
+      "rarity": "Epic",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [
+        {
+          "status": "Hot",
+          "percent": -50.0,
+          "color": "orange"
+        },
+        {
+          "status": "Injury",
+          "percent": -100.0,
+          "color": "red"
+        }
+      ],
+      "icon": "assets/img/items/FortifiedMilk.webp"
+    },
+    {
+      "file": "Frisbee",
+      "name": "Frisbee",
+      "itemID": 99,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "",
+      "tags": [],
+      "rarity": null,
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Frisbee.webp"
+    },
+    {
+      "file": "FrogLegs",
+      "name": "FrogLegs",
+      "itemID": 185,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Rare",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/FrogLegs.webp"
+    },
+    {
+      "file": "Glider",
+      "name": "Glider",
+      "itemID": 174,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Mythic",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Climber)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Glider.webp"
+    },
+    {
+      "file": "Prickleberry_Gold",
+      "name": "Gold Prickleberry",
+      "itemID": 103,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Cactus"
+      ],
+      "effects": [
+        {
+          "status": "Hot",
+          "percent": -10.0,
+          "color": "orange"
+        },
+        {
+          "status": "Injury",
+          "percent": -10.0,
+          "color": "red"
+        }
+      ],
+      "icon": "assets/img/items/Prickleberry_Gold.webp"
+    },
+    {
+      "file": "Granola Bar",
+      "name": "Granola Bar",
+      "itemID": 33,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Packaged food"
+      ],
+      "rarity": "Rare",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [
+        {
+          "status": "Stamina",
+          "percent": 20.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Granola_Bar.webp"
+    },
+    {
+      "file": "Clusterberry_UNUSED",
+      "name": "Green Clusterberry",
+      "itemID": 22,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": -30.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/Clusterberry_UNUSED.webp"
+    },
+    {
+      "file": "Apple Berry Green",
+      "name": "Green Crispberry",
+      "itemID": 3,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Common",
+      "spawnPools": [
+        "Berry bush (Shore)",
+        "Berry bush (Tropics)"
+      ],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 10.0,
+          "color": "green",
+          "overSeconds": 4.0,
+          "delaySeconds": 2.0
+        }
+      ],
+      "icon": "assets/img/items/Apple_Berry_Green.webp"
+    },
+    {
+      "file": "C_Bishop_f",
+      "name": "Green Kingberry",
+      "itemID": 119,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/C_Bishop_f.webp"
+    },
+    {
+      "file": "C_Bishop_m Variant",
+      "name": "Green Kingberry",
+      "itemID": 120,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/C_Bishop_m_Variant.webp"
+    },
+    {
+      "file": "C_Bishop_m",
+      "name": "Green Kingberry",
+      "itemID": 121,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/C_Bishop_m.webp"
+    },
+    {
+      "file": "C_King",
+      "name": "Green Kingberry",
+      "itemID": 123,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/C_King.webp"
+    },
+    {
+      "file": "C_Knight",
+      "name": "Green Kingberry",
+      "itemID": 141,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/C_Knight.webp"
+    },
+    {
+      "file": "C_Pawn_f Variant",
+      "name": "Green Kingberry",
+      "itemID": 142,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/C_Pawn_f_Variant.webp"
+    },
+    {
+      "file": "C_Pawn_f",
+      "name": "Green Kingberry",
+      "itemID": 143,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/C_Pawn_f.webp"
+    },
+    {
+      "file": "C_Pawn_m",
+      "name": "Green Kingberry",
+      "itemID": 145,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/C_Pawn_m.webp"
+    },
+    {
+      "file": "C_Queen",
+      "name": "Green Kingberry",
+      "itemID": 147,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/C_Queen.webp"
+    },
+    {
+      "file": "C_Rook_f Variant",
+      "name": "Green Kingberry",
+      "itemID": 148,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/C_Rook_f_Variant.webp"
+    },
+    {
+      "file": "C_Rook_f",
+      "name": "Green Kingberry",
+      "itemID": 149,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/C_Rook_f.webp"
+    },
+    {
+      "file": "C_Rook_m",
+      "name": "Green Kingberry",
+      "itemID": 151,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/C_Rook_m.webp"
+    },
+    {
+      "file": "Kingberry Green",
+      "name": "Green Kingberry",
+      "itemID": 56,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Common",
+      "spawnPools": [
+        "Willow tree (Tropics)"
+      ],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/Kingberry_Green.webp"
+    },
+    {
+      "file": "Shroomberry_Green",
+      "name": "Green Shroomberry",
+      "itemID": 159,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry",
+        "Mushroom"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Spores",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/Shroomberry_Green.webp"
+    },
+    {
+      "file": "Heat Pack",
+      "name": "Heat Pack",
+      "itemID": 35,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "heat up",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [
+        "Luggage (Alpine)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Heat_Pack.webp"
+    },
+    {
+      "file": "Item_Honeycomb",
+      "name": "Honeycomb",
+      "itemID": 38,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Gourmand requirement"
+      ],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Stamina",
+          "percent": 50.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Item_Honeycomb.webp"
+    },
+    {
+      "file": "Glizzy",
+      "name": "Hot Dog",
+      "itemID": 154,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Rare",
+      "spawnPools": [
+        "Campfire"
+      ],
+      "effects": [
+        {
+          "status": "Stamina",
+          "percent": 20.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Glizzy.webp"
+    },
+    {
+      "file": "Glizzy_CattailVariant",
+      "name": "Hot Dog",
+      "itemID": 153,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Rare",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Stamina",
+          "percent": 20.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Glizzy_CattailVariant.webp"
+    },
+    {
+      "file": "C_King B",
+      "name": "King",
+      "itemID": 129,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_King_B.webp"
+    },
+    {
+      "file": "C_King Variant",
+      "name": "King",
+      "itemID": 122,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_King_Variant.webp"
+    },
+    {
+      "file": "C_King W",
+      "name": "King",
+      "itemID": 130,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_King_W.webp"
+    },
+    {
+      "file": "C_Knight B",
+      "name": "Knight",
+      "itemID": 131,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Knight_B.webp"
+    },
+    {
+      "file": "C_Knight Variant",
+      "name": "Knight",
+      "itemID": 140,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Knight_Variant.webp"
+    },
+    {
+      "file": "C_Knight W",
+      "name": "Knight",
+      "itemID": 132,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Knight_W.webp"
+    },
+    {
+      "file": "Lantern",
+      "name": "Lantern",
+      "itemID": 42,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "light",
+      "tags": [],
+      "rarity": "Epic",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Tropics)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Lantern.webp"
+    },
+    {
+      "file": "MagicBean",
+      "name": "Magic Bean",
+      "itemID": 45,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": null,
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/MagicBean.webp"
+    },
+    {
+      "file": "Mandrake",
+      "name": "Mandrake",
+      "itemID": 155,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Rare",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Curse",
+          "percent": -25.0,
+          "color": "purple"
+        }
+      ],
+      "icon": "assets/img/items/Mandrake.webp"
+    },
+    {
+      "file": "Marshmallow",
+      "name": "Marshmallow",
+      "itemID": 46,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Campfire"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Marshmallow.webp"
+    },
+    {
+      "file": "Mandrake_Hidden",
+      "name": "Medicinal Root",
+      "itemID": 156,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Mushroom cluster"
+      ],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": -25.0,
+          "color": "green"
+        },
+        {
+          "status": "Injury",
+          "percent": -10.0,
+          "color": "red"
+        },
+        {
+          "status": "Poison",
+          "percent": -20.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/Mandrake_Hidden.webp"
+    },
+    {
+      "file": "MedicinalRoot",
+      "name": "Medicinal Root",
+      "itemID": 81,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Mushroom cluster"
+      ],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": -25.0,
+          "color": "green"
+        },
+        {
+          "status": "Injury",
+          "percent": -10.0,
+          "color": "red"
+        },
+        {
+          "status": "Poison",
+          "percent": -20.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/MedicinalRoot.webp"
+    },
+    {
+      "file": "Megaphone",
+      "name": "Megaphone",
+      "itemID": 78,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "use",
+      "tags": [],
+      "rarity": null,
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Megaphone.webp"
+    },
+    {
+      "file": "Napberry",
+      "name": "Napberry",
+      "itemID": 110,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Drowsy",
+          "percent": 100.0,
+          "color": "purple"
+        }
+      ],
+      "icon": "assets/img/items/Napberry.webp"
+    },
+    {
+      "file": "Winterberry Orange",
+      "name": "Orange Winterberry",
+      "itemID": 75,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Common",
+      "spawnPools": [
+        "Winterberry tree"
+      ],
+      "effects": [
+        {
+          "status": "Hot",
+          "percent": -30.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Winterberry_Orange.webp"
+    },
+    {
+      "file": "PandorasBox",
+      "name": "Pandora's Lunchbox",
+      "itemID": 58,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "open?",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Cursed)",
+        "Respawn coffin"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/PandorasBox.webp"
+    },
+    {
+      "file": "Parasol",
+      "name": "Parasol",
+      "itemID": 98,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "open/close",
+      "tags": [],
+      "rarity": "Epic",
+      "spawnPools": [
+        "Luggage (Clown)",
+        "Luggage (Mesa)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Parasol.webp"
+    },
+    {
+      "file": "Parasol_Roots Variant",
+      "name": "Parasol",
+      "itemID": 164,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "open/close",
+      "tags": [],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Roots)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Parasol_Roots_Variant.webp"
+    },
+    {
+      "file": "Passport",
+      "name": "Passport",
+      "itemID": 59,
+      "weight": -1,
+      "weightPercent": -2.5,
+      "prompt": "open",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Passport.webp"
+    },
+    {
+      "file": "C_Pawn B",
+      "name": "Pawn",
+      "itemID": 133,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Pawn_B.webp"
+    },
+    {
+      "file": "C_Pawn W",
+      "name": "Pawn",
+      "itemID": 134,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Pawn_W.webp"
+    },
+    {
+      "file": "C_Pawn_m Variant",
+      "name": "Pawn",
+      "itemID": 144,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Pawn_m_Variant.webp"
+    },
+    {
+      "file": "Berrynana Pink",
+      "name": "Pink Berrynana",
+      "itemID": 11,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Rare",
+      "spawnPools": [
+        "Jungle vine"
+      ],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 15.0,
+          "color": "green",
+          "overSeconds": 6.0,
+          "delaySeconds": 2.0
+        }
+      ],
+      "icon": "assets/img/items/Berrynana_Pink.webp"
+    },
+    {
+      "file": "Pirate Compass",
+      "name": "Pirate's Compass",
+      "itemID": 61,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "use",
+      "tags": [],
+      "rarity": "Ridiculously Rare",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Pirate_Compass.webp"
+    },
+    {
+      "file": "ClimbingSpike",
+      "name": "Piton",
+      "itemID": 18,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Epic",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Ancient)",
+        "Luggage (Citadel)",
+        "Luggage (Climber)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/ClimbingSpike.webp"
+    },
+    {
+      "file": "PortableStovetopItem",
+      "name": "Portable Stove",
+      "itemID": 62,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "place",
+      "tags": [],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Tropics)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/PortableStovetopItem.webp"
+    },
+    {
+      "file": "Kingberry Purple",
+      "name": "Purple Kingberry",
+      "itemID": 40,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Willow tree (Tropics)"
+      ],
+      "effects": [
+        {
+          "status": "Stamina",
+          "percent": 35.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Kingberry_Purple.webp"
+    },
+    {
+      "file": "Shroomberry_Purple",
+      "name": "Purple Shroomberry",
+      "itemID": 160,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry",
+        "Mushroom"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Spores",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/Shroomberry_Purple.webp"
+    },
+    {
+      "file": "C_Queen B",
+      "name": "Queen",
+      "itemID": 135,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Queen_B.webp"
+    },
+    {
+      "file": "C_Queen Variant",
+      "name": "Queen",
+      "itemID": 146,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Queen_Variant.webp"
+    },
+    {
+      "file": "C_Queen W",
+      "name": "Queen",
+      "itemID": 136,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Queen_W.webp"
+    },
+    {
+      "file": "Clusterberry Red",
+      "name": "Red Clusterberry",
+      "itemID": 20,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Common",
+      "spawnPools": [
+        "Spiky vine"
+      ],
+      "effects": [
+        {
+          "status": "Injury",
+          "percent": -20.0,
+          "color": "red"
+        }
+      ],
+      "icon": "assets/img/items/Clusterberry_Red.webp"
+    },
+    {
+      "file": "Apple Berry Red",
+      "name": "Red Crispberry",
+      "itemID": 4,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Common",
+      "spawnPools": [
+        "Berry bush (Shore)",
+        "Berry bush (Tropics)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Apple_Berry_Red.webp"
+    },
+    {
+      "file": "Prickleberry_Red",
+      "name": "Red Prickleberry",
+      "itemID": 108,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Common",
+      "spawnPools": [
+        "Cactus"
+      ],
+      "effects": [
+        {
+          "status": "Hot",
+          "percent": -10.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Prickleberry_Red.webp"
+    },
+    {
+      "file": "Shroomberry_Red",
+      "name": "Red Shroomberry",
+      "itemID": 161,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry",
+        "Mushroom"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Spores",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/Shroomberry_Red.webp"
+    },
+    {
+      "file": "HealingPuffShroom",
+      "name": "Remedy Fungus",
+      "itemID": 90,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/HealingPuffShroom.webp"
+    },
+    {
+      "file": "RescueHook",
+      "name": "Rescue Claw",
+      "itemID": 100,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "shoot",
+      "tags": [],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Climber)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/RescueHook.webp"
+    },
+    {
+      "file": "RescueHook_Infinite",
+      "name": "Rescue Claw",
+      "itemID": 167,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "shoot",
+      "tags": [],
+      "rarity": "Legendary",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/RescueHook_Infinite.webp"
+    },
+    {
+      "file": "RitualDagger",
+      "name": "RitualDagger",
+      "itemID": 173,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Cursed)",
+        "Respawn coffin"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/RitualDagger.webp"
+    },
+    {
+      "file": "C_Rook B",
+      "name": "Rook",
+      "itemID": 137,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Rook_B.webp"
+    },
+    {
+      "file": "C_Rook W",
+      "name": "Rook",
+      "itemID": 138,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Rook_W.webp"
+    },
+    {
+      "file": "C_Rook_m Variant",
+      "name": "Rook",
+      "itemID": 150,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/C_Rook_m_Variant.webp"
+    },
+    {
+      "file": "RopeShooter",
+      "name": "rope cannon",
+      "itemID": 63,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "shoot",
+      "tags": [],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Climber)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/RopeShooter.webp"
+    },
+    {
+      "file": "RopeSpool",
+      "name": "rope spool",
+      "itemID": 65,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "tie knot",
+      "tags": [],
+      "rarity": "Rare",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Climber)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/RopeSpool.webp"
+    },
+    {
+      "file": "Pepper Berry",
+      "name": "Scorchberry",
+      "itemID": 60,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Berry bush (Tropics)"
+      ],
+      "effects": [
+        {
+          "status": "Hot",
+          "percent": 25.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Pepper_Berry.webp"
+    },
+    {
+      "file": "ScoutCannonItem",
+      "name": "Scout Cannon",
+      "itemID": 107,
+      "weight": 4,
+      "weightPercent": 10.0,
+      "prompt": "place",
+      "tags": [],
+      "rarity": "Mythic",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Clown)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/ScoutCannonItem.webp"
+    },
+    {
+      "file": "ScoutCookies",
+      "name": "Scout Cookies",
+      "itemID": 66,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [
+        "Packaged food"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [
+        {
+          "status": "Stamina",
+          "percent": 10.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/ScoutCookies.webp"
+    },
+    {
+      "file": "ScoutCookies_Vanilla",
+      "name": "Scout Cookies",
+      "itemID": 157,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [
+        "Packaged food"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Stamina",
+          "percent": 10.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/ScoutCookies_Vanilla.webp"
+    },
+    {
+      "file": "ScoutEffigy",
+      "name": "Scout Effigy",
+      "itemID": 67,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "revive",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Ancient)",
+        "Luggage (Cursed)",
+        "Respawn coffin"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/ScoutEffigy.webp"
+    },
+    {
+      "file": "Amulet_InfiniteStamina",
+      "name": "Scout's Ambition",
+      "itemID": 179,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "ACTIVATE",
+      "tags": [
+        "Mystical",
+        "Scout amulet"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Petrify",
+          "percent": 30.0,
+          "color": "dim"
+        }
+      ],
+      "icon": "assets/img/items/Amulet_InfiniteStamina.webp"
+    },
+    {
+      "file": "Amulet_Clone",
+      "name": "Scout's Generosity",
+      "itemID": 180,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "ACTIVATE",
+      "tags": [
+        "Mystical",
+        "Scout amulet"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Amulet_Clone.webp"
+    },
+    {
+      "file": "Amulet_SuperJump",
+      "name": "Scout's Initiative",
+      "itemID": 170,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "ACTIVATE",
+      "tags": [
+        "Mystical",
+        "Scout amulet"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Amulet_SuperJump.webp"
+    },
+    {
+      "file": "Amulet_Healing",
+      "name": "Scout's Tenacity",
+      "itemID": 182,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "ACTIVATE",
+      "tags": [
+        "Mystical",
+        "Scout amulet"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Amulet_Healing.webp"
+    },
+    {
+      "file": "Bugle_Scoutmaster Variant",
+      "name": "Scoutmaster's Bugle",
+      "itemID": 77,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "play",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Mythic",
+      "spawnPools": [
+        "Luggage (Cursed)",
+        "Respawn coffin"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Bugle_Scoutmaster_Variant.webp"
+    },
+    {
+      "file": "ScoutmasterSoul",
+      "name": "Scoutmaster's Soul",
+      "itemID": 191,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "ACTION_BREAK",
+      "tags": [],
+      "rarity": "Ridiculously Rare",
+      "spawnPools": [],
+      "effects": [],
+      "icon": null
+    },
+    {
+      "file": "ScoutsHonor",
+      "name": "ScoutsHonor",
+      "itemID": 183,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "commune",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Ridiculously Rare",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/ScoutsHonor.webp"
+    },
+    {
+      "file": "GuidebookPageScroll Variant",
+      "name": "Scroll",
+      "itemID": 49,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "open",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/GuidebookPageScroll_Variant.webp"
+    },
+    {
+      "file": "ShelfShroom",
+      "name": "Shelf Fungus",
+      "itemID": 68,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [
+        "Redwood"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/ShelfShroom.webp"
+    },
+    {
+      "file": "Skull",
+      "name": "Skull",
+      "itemID": 163,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": null,
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Skull.webp"
+    },
+    {
+      "file": "NestEgg_Raven",
+      "name": "Small Egg",
+      "itemID": 178,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [
+        "Gourmand requirement"
+      ],
+      "rarity": "Common",
+      "spawnPools": [
+        "Nest"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/NestEgg_Raven.webp"
+    },
+    {
+      "file": "Snowball",
+      "name": "Snowball",
+      "itemID": 165,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Snowball.webp"
+    },
+    {
+      "file": "Sports Drink",
+      "name": "Sports Drink",
+      "itemID": 71,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "drink",
+      "tags": [
+        "Packaged food"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [
+        {
+          "status": "Hot",
+          "percent": -200.0,
+          "color": "orange"
+        },
+        {
+          "status": "Stamina",
+          "percent": 30.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Sports_Drink.webp"
+    },
+    {
+      "file": "FireWood",
+      "name": "Stick",
+      "itemID": 28,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/FireWood.webp"
+    },
+    {
+      "file": "Strange Gem",
+      "name": "Strange Gem",
+      "itemID": 112,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "USE",
+      "tags": [
+        "Mystical",
+        "Scout amulet"
+      ],
+      "rarity": "Ridiculously Rare",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Strange_Gem.webp"
+    },
+    {
+      "file": "Sunscreen",
+      "name": "Sunscreen",
+      "itemID": 104,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "spray",
+      "tags": [],
+      "rarity": "Epic",
+      "spawnPools": [
+        "Luggage (Mesa)"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Sunscreen.webp"
+    },
+    {
+      "file": "BookOfBones",
+      "name": "The Book of Bones",
+      "itemID": 115,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "read",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [
+        "Luggage (Cursed)",
+        "Respawn coffin"
+      ],
+      "effects": [
+        {
+          "status": "Curse",
+          "percent": 50.0,
+          "color": "purple"
+        },
+        {
+          "status": "Curse",
+          "percent": -25.0,
+          "color": "purple"
+        }
+      ],
+      "icon": "assets/img/items/BookOfBones.webp"
+    },
+    {
+      "file": "EarlyWorm",
+      "name": "The Early Worm",
+      "itemID": 184,
+      "weight": 0,
+      "weightPercent": 0.0,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Drowsy",
+          "percent": -100.0,
+          "color": "purple"
+        }
+      ],
+      "icon": "assets/img/items/EarlyWorm.webp"
+    },
+    {
+      "file": "Bugfix",
+      "name": "Tick",
+      "itemID": 95,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [],
+      "rarity": null,
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Bugfix.webp"
+    },
+    {
+      "file": "Torch",
+      "name": "Torch",
+      "itemID": 109,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "light",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Torch.webp"
+    },
+    {
+      "file": "TrailMix",
+      "name": "Trail Mix",
+      "itemID": 73,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Packaged food"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Luggage (Alpine)",
+        "Luggage (Citadel)",
+        "Luggage (Gloom)",
+        "Luggage (Mesa)",
+        "Luggage (Roots)",
+        "Luggage (Shore)",
+        "Luggage (Tropics)",
+        "Luggage (Volcano)"
+      ],
+      "effects": [
+        {
+          "status": "Stamina",
+          "percent": 10.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/TrailMix.webp"
+    },
+    {
+      "file": "Cheat Compass 1",
+      "name": "WARP COMPASS",
+      "itemID": 193,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "warp",
+      "tags": [],
+      "rarity": "Legendary",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Cheat_Compass_1.webp"
+    },
+    {
+      "file": "Cheat Compass",
+      "name": "WARP COMPASS",
+      "itemID": 113,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "warp",
+      "tags": [],
+      "rarity": "Legendary",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Cheat_Compass.webp"
+    },
+    {
+      "file": "Warp Compass",
+      "name": "Warp Compass",
+      "itemID": 74,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "warp",
+      "tags": [
+        "Mystical"
+      ],
+      "rarity": "Legendary",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Warp_Compass.webp"
+    },
+    {
+      "file": "WarpFungus",
+      "name": "Warp Fungus",
+      "itemID": 181,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Common",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/WarpFungus.webp"
+    },
+    {
+      "file": "Warpsketball",
+      "name": "Warpsketball",
+      "itemID": 175,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "",
+      "tags": [],
+      "rarity": "Legendary",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Warpsketball.webp"
+    },
+    {
+      "file": "Mushroom Glow",
+      "name": "Weird Shroom",
+      "itemID": 51,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Mushroom"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [],
+      "icon": "assets/img/items/Mushroom_Glow.webp"
+    },
+    {
+      "file": "Berrynana Yellow",
+      "name": "Yellow Berrynana",
+      "itemID": 12,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Common",
+      "spawnPools": [
+        "Jungle vine"
+      ],
+      "effects": [],
+      "icon": "assets/img/items/Berrynana_Yellow.webp"
+    },
+    {
+      "file": "Clusterberry Yellow",
+      "name": "Yellow Clusterberry",
+      "itemID": 21,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Common",
+      "spawnPools": [
+        "Spiky vine"
+      ],
+      "effects": [
+        {
+          "status": "Stamina",
+          "percent": 10.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Clusterberry_Yellow.webp"
+    },
+    {
+      "file": "Apple Berry Yellow",
+      "name": "Yellow Crispberry",
+      "itemID": 5,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Rare",
+      "spawnPools": [
+        "Berry bush (Shore)",
+        "Berry bush (Tropics)"
+      ],
+      "effects": [
+        {
+          "status": "Stamina",
+          "percent": 10.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Apple_Berry_Yellow.webp"
+    },
+    {
+      "file": "Kingberry Yellow",
+      "name": "Yellow Kingberry",
+      "itemID": 41,
+      "weight": 2,
+      "weightPercent": 5.0,
+      "prompt": "eat",
+      "tags": [
+        "Berry"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [
+        "Willow tree (Tropics)"
+      ],
+      "effects": [
+        {
+          "status": "Poison",
+          "percent": 25.0,
+          "color": "green",
+          "overSeconds": 10.0,
+          "delaySeconds": 3.0
+        }
+      ],
+      "icon": "assets/img/items/Kingberry_Yellow.webp"
+    },
+    {
+      "file": "Shroomberry_Yellow",
+      "name": "Yellow Shroomberry",
+      "itemID": 162,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry",
+        "Mushroom"
+      ],
+      "rarity": "Uncommon",
+      "spawnPools": [],
+      "effects": [
+        {
+          "status": "Spores",
+          "percent": 5.0,
+          "color": "green"
+        }
+      ],
+      "icon": "assets/img/items/Shroomberry_Yellow.webp"
+    },
+    {
+      "file": "Winterberry Yellow",
+      "name": "Yellow Winterberry",
+      "itemID": 76,
+      "weight": 1,
+      "weightPercent": 2.5,
+      "prompt": "eat",
+      "tags": [
+        "Berry",
+        "Gourmand requirement"
+      ],
+      "rarity": "Ridiculously Rare",
+      "spawnPools": [
+        "Winterberry tree"
+      ],
+      "effects": [
+        {
+          "status": "Hot",
+          "percent": -50.0,
+          "color": "orange"
+        },
+        {
+          "status": "Injury",
+          "percent": -20.0,
+          "color": "red"
+        },
+        {
+          "status": "Stamina",
+          "percent": 35.0,
+          "color": "orange"
+        }
+      ],
+      "icon": "assets/img/items/Winterberry_Yellow.webp"
+    }
+  ]
+}

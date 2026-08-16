@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PEAK Rotation Tracker</title>
+    <meta name="description"
+          content="Today's PEAK map, biome, and variant skins, plus the predicted rotation for the days ahead.">
+    <link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+
+<div class="skyline">
+    <div class="logo-wrap"><img src="assets/img/peak-logo.png" alt="PEAK" width="900" height="283"></div>
+</div>
+
+<div class="wrap">
+    <div class="topbar">
+        <a class="brand" href="index.html">
+            <span class="mark">PeakAIO</span>
+            <span class="tag">rotation tracker</span>
+        </a>
+        <nav class="tabs">
+            <a href="index.html" class="active">Today</a>
+            <a href="maps.html">Map Index</a>
+            <a href="items.html">Items</a>
+            <a href="accolades.html">Accolades</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero">
+            <span class="eyebrow">Live rotation - updates every 24h</span>
+            <h1 id="hero-title">Loading today's peak…</h1>
+            <p class="sub" id="hero-sub"></p>
+            <div class="kv-grid" id="today-kv"></div>
+            <div class="kv" style="margin-top:1rem;">
+                <label>Rotates in</label>
+                <output class="big" id="rotation-countdown" data-countdown-precise></output>
+            </div>
+            <div style="margin-top:1rem;" id="live-badge"></div>
+        </section>
+
+        <section class="panel" id="live">
+            <h2> Server cross-check</h2>
+            <p class="desc">Confirms today's map against the real login server, refreshed shortly after each daily rotation.</p>
+            <div class="card" id="live-detail">
+                <p class="note">No cross-check data yet.</p>
+            </div>
+        </section>
+
+        <section class="panel" id="next-up">
+            <h2> Predicted next maps</h2>
+            <p class="desc">The next few days on the rotation.</p>
+            <div class="card-grid" id="next-cards"></div>
+        </section>
+
+        <section class="panel" id="rotation">
+            <h2> Full 12-day cycle</h2>
+            <p class="desc">Every level in the loop, biome sequence, and variant skins, starting from today. "Deep Biome" is Caldera or Gloom (plus its follow-up area) -- not in the extracted game data, so shown generically.</p>
+            <div class="table-wrap">
+                <table id="rotation-table">
+                    <thead>
+                    <tr>
+                        <th>Day index</th>
+                        <th>Level</th>
+                        <th>Biome ID</th>
+                        <th>Sequence</th>
+                        <th>Variant skins</th>
+                        <th>Rotates in</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <span>PeakAIO, data extrcated from PEAK v2.1.a</span>
+            <a class="pagelink" href="maps.html">Browse all 12 maps</a>
+        </footer>
+    </main>
+</div>
+
+<script src="assets/js/rotation.js"></script>
+<script>
+    const now = new Date();
+    const todayIndex = PEAK.computeDayIndex(now.getTime());
+    const today = PEAK.describeDay(todayIndex);
+    const rotatesAt = PEAK.nextRotation(todayIndex);
+    document.getElementById("rotation-countdown").dataset.countdown = rotatesAt.getTime();
+
+    document.getElementById("hero-title").textContent = `Today: Level_${today.levelIndex} (${today.sequence})`;
+    document.getElementById("hero-sub").textContent =
+        `Rotates again at ${PEAK.fmtLocal(rotatesAt)}. Variant skins: ${today.variants.join(", ")}.`;
+
+    const kv = document.getElementById("today-kv");
+    kv.innerHTML = [
+        ["Day index", today.dayIndex, false],
+        ["Level index (mod 12)", today.levelIndex, true],
+        ["Biome ID", today.biomeId, false],
+        ["Scene", today.scene.split("/").pop(), false],
+        ["Next rotation", PEAK.fmtLocal(rotatesAt), false],
+    ].map(([label, val, big]) =>
+        `<div class="kv"><label>${label}</label><output class="${big ? "big" : ""}">${val}</output></div>`
+    ).join("");
+
+    const nextCards = document.getElementById("next-cards");
+    let cardsHtml = "";
+    for (let i = 0; i < 6; i++) {
+        const d = today.dayIndex + i;
+        const info = PEAK.describeDay(d);
+        const startsAt = new Date(PEAK.EPOCH_MS + d * 24 * 3.6e6);
+        const countdownTarget = i === 0 ? rotatesAt.getTime() : startsAt.getTime();
+        const dateLabel = i === 0 ? "Today" : i === 1 ? "Tomorrow" : startsAt.toLocaleDateString(undefined, {
+            month: "short",
+            day: "numeric"
+        });
+        cardsHtml += `
+      <a class="map-card ${i === 0 ? "today" : ""}" href="maps.html#level-${info.levelIndex}">
+        <span class="lvl">${dateLabel}</span>
+        <span class="seq">Level_${info.levelIndex} - ${info.biomeId}</span>
+        <span class="seq">${info.sequence}</span>
+        <span class="when" data-countdown="${countdownTarget}" data-prefix="${i === 0 ? "rotates in " : "in "}"></span>
+      </a>`;
+    }
+    nextCards.innerHTML = cardsHtml;
+
+    const rotBody = document.querySelector("#rotation-table tbody");
+    let rows = "";
+    for (let i = 0; i < 12; i++) {
+        const d = today.dayIndex + i;
+        const info = PEAK.describeDay(d);
+        const rt = PEAK.nextRotation(d);
+        rows += `<tr class="${i === 0 ? "today" : ""}">
+      <td>${d}</td>
+      <td><a class="pagelink" href="maps.html#level-${info.levelIndex}">Level_${info.levelIndex}</a></td>
+      <td>${info.biomeId}</td>
+      <td>${info.sequence}</td>
+      <td class="dim">${info.variants.join(", ")}</td>
+      <td class="dim" data-countdown="${rt.getTime()}"></td>
+    </tr>`;
+    }
+    rotBody.innerHTML = rows;
+
+    function tickCountdowns() {
+        document.querySelectorAll("[data-countdown]").forEach((el) => {
+            const target = Number(el.dataset.countdown);
+            const text = el.hasAttribute("data-countdown-precise")
+                ? PEAK.formatCountdownPrecise(target)
+                : PEAK.formatCountdown(target);
+            el.textContent = (el.dataset.prefix || "") + text;
+        });
+    }
+
+    tickCountdowns();
+    setInterval(tickCountdowns, 1000);
+
+    const badgeEl = document.getElementById("live-badge");
+    const detailEl = document.getElementById("live-detail");
+    fetch("data/live.json", { cache: "no-store" })
+        .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
+        .then((live) => {
+            if (!live.ok) throw new Error(live.error || "no data yet");
+            const match = live.dayIndex === today.dayIndex;
+            const serverInfo = PEAK.describeDay(live.dayIndex);
+            badgeEl.innerHTML = `<span class="badge ${match ? "ok" : "warn"}"><span class="dot"></span>${match ? "Confirmed by login server" : "Server changed the live map"}</span>`;
+            detailEl.innerHTML = `
+        <div class="kv-grid">
+          <div class="kv"><label>Server says</label><output>Level_${serverInfo.levelIndex} (${serverInfo.sequence})</output></div>
+          <div class="kv"><label>Local prediction</label><output>Level_${today.levelIndex} (${today.sequence})</output></div>
+          <div class="kv"><label>Checked at</label><output>${PEAK.fmtLocal(new Date(live.fetchedAt))}</output></div>
+          <div class="kv"><label>Result</label><output>${match ? "MATCH" : "DIFFERS"}</output></div>
+        </div>
+        ${live.raw && live.raw.Message ? `<p class="note" style="margin-top:1rem;">${live.raw.Message}</p>` : ""}`;
+        })
+        .catch(() => {
+            badgeEl.innerHTML = `<span class="badge"><span class="dot"></span>No cross-check data yet</span>`;
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PEAK Accolades</title>
+    <meta name="description" content="Every PEAK sash and badge: how to unlock them, with the real in-game icons.">
+    <link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+
+<div class="skyline">
+    <div class="logo-wrap"><img src="assets/img/peak-logo.png" alt="PEAK" width="900" height="283"></div>
+</div>
+
+<div class="wrap">
+    <div class="topbar">
+        <a class="brand" href="index.html">
+            <span class="mark">PeakAIO</span>
+            <span class="tag">Accolades</span>
+        </a>
+        <nav class="tabs">
+            <a href="index.html">Today</a>
+            <a href="maps.html">Map Index</a>
+            <a href="items.html">Items</a>
+            <a href="accolades.html" class="active">Accolades</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="hero">
+            <span class="eyebrow">Sashes &amp; badges</span>
+            <h1>Accolades</h1>
+            <p class="sub">Every Ascent sash and badge, with the requirement to unlock it. Hover a badge for a quick
+                look, click it for the full picture.</p>
+        </section>
+
+        <section class="panel" id="sashes">
+            <h2> Sashes</h2>
+            <p class="desc">Pick a sash to preview it.</p>
+            <div class="card sash-preview" id="sash-preview"></div>
+            <div class="sash-row" id="sash-row"></div>
+        </section>
+
+        <section class="panel" id="badges">
+            <h2> Badges</h2>
+            <p class="desc">65 accolades, unlocked by doing things the game never tells you to.</p>
+            <div class="badge-grid" id="badge-grid"></div>
+        </section>
+
+        <footer>
+            <span>PeakAIO, data extrcated from PEAK v2.1.a</span>
+            <a class="pagelink" href="index.html">Back to today</a>
+        </footer>
+    </main>
+</div>
+
+<div class="modal-overlay" id="modal" hidden>
+    <div class="modal-card" id="modal-card"></div>
+</div>
+
+<script src="assets/js/accolades-data.js"></script>
+<script>
+    const sashRow = document.getElementById("sash-row");
+    const sashPreview = document.getElementById("sash-preview");
+
+    function renderSash(idx) {
+        const s = SASHES[idx];
+        sashPreview.innerHTML = `
+      <img src="assets/img/sashes/${s.file}.webp" alt="${s.name}">
+      <div class="info">
+        <h3>${s.name}</h3>
+        <p><strong>Unlock:</strong> ${s.requirement}</p>
+        <p><strong>Modifiers:</strong> ${s.modifiers}</p>
+      </div>`;
+        [...sashRow.children].forEach((el, i) => el.classList.toggle("active", i === idx));
+    }
+
+    sashRow.innerHTML = SASHES.map((s, i) =>
+        `<button class="sash-swatch" data-idx="${i}" title="${s.name}"><img src="assets/img/sashes/${s.file}.webp" alt="${s.name}"></button>`
+    ).join("");
+    sashRow.addEventListener("click", (e) => {
+        const btn = e.target.closest(".sash-swatch");
+        if (btn) renderSash(Number(btn.dataset.idx));
+    });
+    renderSash(1); // default to "Peak"
+
+    const ALL_BADGES = [...BADGES, ...SPECIAL_BADGES];
+    const badgeGrid = document.getElementById("badge-grid");
+    badgeGrid.innerHTML = ALL_BADGES.map((b, i) => `
+    <div class="badge-slot">
+      <button class="badge-btn${SPECIAL_BADGES.includes(b) ? " special" : ""}" data-idx="${i}">
+        <img src="assets/img/badges/${b.file}.webp" alt="${b.name}">
+      </button>
+      <div class="badge-tip"><strong>${b.name}</strong>${b.desc}</div>
+    </div>`).join("");
+
+    const modal = document.getElementById("modal");
+    const modalCard = document.getElementById("modal-card");
+
+    function itemLinks(badge) {
+        if (!badge.items || !badge.items.length) return "";
+        const links = badge.items.map((name) =>
+            `<a class="btn-chip" href="items.html?search=${encodeURIComponent(name)}">${name}</a>`
+        ).join("");
+        return `<div class="item-links">${links}</div>`;
+    }
+
+    function openBadge(idx) {
+        const b = ALL_BADGES[idx];
+        modalCard.innerHTML = `
+      <img src="assets/img/badges/${b.file}.webp" alt="${b.name}">
+      <h3>${b.name}</h3>
+      <p>${b.desc}</p>
+      ${itemLinks(b)}
+      <button class="modal-close" id="modal-close-btn">Close</button>`;
+        modal.hidden = false;
+        document.getElementById("modal-close-btn").addEventListener("click", closeModal);
+    }
+
+    function closeModal() {
+        modal.hidden = true;
+    }
+
+    badgeGrid.addEventListener("click", (e) => {
+        const btn = e.target.closest(".badge-btn");
+        if (btn) openBadge(Number(btn.dataset.idx));
+    });
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+    });
+</script>
+</body>
+</html>

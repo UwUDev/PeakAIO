@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PEAK Item Index</title>
+<meta name="description" content="Every PEAK item: icon, weight, category, rarity, and which loot pools it can spawn from.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+
+<div class="skyline">
+  <div class="logo-wrap"><img src="assets/img/peak-logo.png" alt="PEAK" width="900" height="283"></div>
+</div>
+
+<div class="wrap">
+  <div class="topbar">
+    <a class="brand" href="index.html">
+      <span class="mark">PeakAIO</span>
+      <span class="tag">Items</span>
+    </a>
+    <nav class="tabs">
+      <a href="index.html">Today</a>
+      <a href="maps.html">Map Index</a>
+      <a href="items.html" class="active">Items</a>
+      <a href="accolades.html">Accolades</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero">
+      <span class="eyebrow">Item index</span>
+      <h1>Every item</h1>
+      <p class="sub">Icon, weight, category, rarity, and which loot pools each item can spawn from, pulled straight from the game's own data.</p>
+      <p class="note">Cooking transforms and combat/status effect numbers (poison damage, explosion damage, healing amounts) aren't shown -- that data isn't present in the decompiled files at all, not just hard to parse.</p>
+    </section>
+
+    <section class="panel" id="items">
+      <h2> <span id="item-count"></span></h2>
+      <div class="item-toolbar">
+        <input type="text" id="search" placeholder="Search items...">
+        <select id="rarity-filter">
+          <option value="">All rarities</option>
+        </select>
+        <select id="pool-filter">
+          <option value="">All loot pools</option>
+        </select>
+      </div>
+      <div class="item-grid" id="item-grid"></div>
+    </section>
+
+    <footer>
+      <span>PeakAIO, data extrcated from PEAK v2.1.a</span>
+      <a class="pagelink" href="index.html">Back to today</a>
+    </footer>
+  </main>
+</div>
+
+<script>
+  let ITEMS = [];
+
+  fetch("items.json", { cache: "no-store" })
+    .then((r) => r.json())
+    .then((d) => {
+      ITEMS = d.items;
+      document.getElementById("item-count").textContent = `${ITEMS.length} items`;
+      populateFilters();
+      const q = new URLSearchParams(location.search).get("search");
+      if (q) document.getElementById("search").value = q;
+      render();
+    })
+    .catch(() => {
+      document.getElementById("item-grid").innerHTML = `<p class="note">Couldn't load items.json.</p>`;
+    });
+
+  function populateFilters() {
+    const rarities = [...new Set(ITEMS.map((i) => i.rarity).filter(Boolean))];
+    const raritySelect = document.getElementById("rarity-filter");
+    raritySelect.innerHTML += rarities.map((r) => `<option value="${r}">${r}</option>`).join("");
+
+    const pools = [...new Set(ITEMS.flatMap((i) => i.spawnPools))].sort();
+    const poolSelect = document.getElementById("pool-filter");
+    poolSelect.innerHTML += pools.map((p) => `<option value="${p}">${p}</option>`).join("");
+
+    document.getElementById("search").addEventListener("input", render);
+    raritySelect.addEventListener("change", render);
+    poolSelect.addEventListener("change", render);
+  }
+
+  const PROMPT_LABELS = { eat: "eatable", use: "usable", shoot: "can shoot", drink: "drinkable" };
+  function formatPrompt(raw) {
+    const key = raw.trim().toLowerCase();
+    return PROMPT_LABELS[key] || key;
+  }
+
+  function statBar(label, percent, color) {
+    const clamped = Math.max(-100, Math.min(100, percent));
+    const sign = percent > 0 ? "+" : "";
+    return `
+      <div class="stat-bar">
+        <span class="stat-label">${label}</span>
+        <span class="track"><span class="fill fill-${color}" style="width:${Math.abs(clamped)}%"></span></span>
+        <span class="stat-value">${sign}${percent}%</span>
+      </div>`;
+  }
+
+  function card(item) {
+    const iconHtml = item.icon
+      ? `<img src="${item.icon}" alt="" loading="lazy">`
+      : `<span class="no-icon">?</span>`;
+    const rarityClass = item.rarity ? `rarity-${item.rarity.replace(/\s+/g, "")}` : "";
+    const rarityHtml = item.rarity ? `<span class="rarity-pill ${rarityClass}">${item.rarity}</span>` : "";
+    const tagsHtml = item.tags.map((t) => `<span class="pill">${t}</span>`).join("");
+    const poolsHtml = item.spawnPools.length
+      ? `<div class="pools"><strong>Found in:</strong> ${item.spawnPools.join(", ")}</div>`
+      : `<div class="pools">Not from random loot</div>`;
+
+    const weightBar = item.weightPercent !== null
+      ? statBar("Weight", item.weightPercent, "dim")
+      : "";
+    const effectsHtml = item.effects.length
+      ? `<div class="effect-list">${item.effects.map((e) => statBar(e.status, e.percent, e.color)).join("")}</div>`
+      : "";
+
+    return `
+      <div class="item-card">
+        <div class="icon-wrap">${iconHtml}</div>
+        <div class="name">${item.name}</div>
+        ${item.prompt ? `<div class="meta-row"><span>${formatPrompt(item.prompt)}</span></div>` : ""}
+        ${rarityHtml || tagsHtml ? `<div class="tag-row">${rarityHtml}${tagsHtml}</div>` : ""}
+        ${weightBar}
+        ${effectsHtml}
+        ${poolsHtml}
+      </div>`;
+  }
+
+  function render() {
+    const q = document.getElementById("search").value.trim().toLowerCase();
+    const rarity = document.getElementById("rarity-filter").value;
+    const pool = document.getElementById("pool-filter").value;
+
+    const filtered = ITEMS.filter((i) => {
+      if (q && !i.name.toLowerCase().includes(q)) return false;
+      if (rarity && i.rarity !== rarity) return false;
+      if (pool && !i.spawnPools.includes(pool)) return false;
+      return true;
+    });
+
+    document.getElementById("item-grid").innerHTML =
+      filtered.map(card).join("") || `<p class="note">No items match.</p>`;
+  }
+</script>
+</body>
+</html>
