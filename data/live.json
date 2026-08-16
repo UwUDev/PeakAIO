@@ -1,13 +1,13 @@
 {
-  "dayIndex": 427,
+  "dayIndex": 428,
   "raw": {
     "VersionOkay": true,
-    "HoursUntilLevel": 2,
-    "MinutesUntilLevel": 43,
-    "SecondsUntilLevel": 52,
-    "LevelIndex": 427,
+    "HoursUntilLevel": 23,
+    "MinutesUntilLevel": 35,
+    "SecondsUntilLevel": 10,
+    "LevelIndex": 428,
     "Message": "The Final Ascent is Finally OUT!! Check patch notes!<br><br>OUR SERVERS ARE EXPLODING! They should scale up shortly, sorry if your game fails to load in the meantime!<br><br>And remember to disable your mods, this update will probably break them!!"
   },
-  "fetchedAt": "2026-08-16T14:16:07.434165+00:00",
+  "fetchedAt": "2026-08-16T17:24:49.206925+00:00",
   "ok": true
 }
