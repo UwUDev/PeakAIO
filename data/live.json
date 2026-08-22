@@ -1,13 +1,13 @@
 {
-  "dayIndex": 433,
+  "dayIndex": 434,
   "raw": {
     "VersionOkay": false,
     "HoursUntilLevel": 23,
-    "MinutesUntilLevel": 25,
-    "SecondsUntilLevel": 26,
-    "LevelIndex": 433,
+    "MinutesUntilLevel": 33,
+    "SecondsUntilLevel": 29,
+    "LevelIndex": 434,
     "Message": "we nerfed the frogs again"
   },
-  "fetchedAt": "2026-08-21T17:34:33.058595+00:00",
+  "fetchedAt": "2026-08-22T17:26:29.659900+00:00",
   "ok": true
 }
