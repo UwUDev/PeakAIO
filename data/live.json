@@ -1,13 +1,13 @@
 {
-  "dayIndex": 439,
+  "dayIndex": 440,
   "raw": {
     "VersionOkay": false,
-    "HoursUntilLevel": 15,
-    "MinutesUntilLevel": 35,
-    "SecondsUntilLevel": 47,
-    "LevelIndex": 439,
+    "HoursUntilLevel": 16,
+    "MinutesUntilLevel": 5,
+    "SecondsUntilLevel": 3,
+    "LevelIndex": 440,
     "Message": "We're gonna wait one more week before CALDERA and THE KILN re-enter the map rotation. We got a little swamped (ha) with bugs and need more time to refine the biomes. Sorry!"
   },
-  "fetchedAt": "2026-08-28T01:24:12.552349+00:00",
+  "fetchedAt": "2026-08-29T00:54:56.007263+00:00",
   "ok": true
 }
