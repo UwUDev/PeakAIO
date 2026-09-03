@@ -1,13 +1,13 @@
 {
-  "dayIndex": 445,
+  "dayIndex": 446,
   "raw": {
     "VersionOkay": false,
     "HoursUntilLevel": 21,
-    "MinutesUntilLevel": 19,
-    "SecondsUntilLevel": 32,
-    "LevelIndex": 445,
-    "Message": "We're gonna wait one more week before CALDERA and THE KILN re-enter the map rotation. We got a little swamped (ha) with bugs and need more time to refine the biomes. Sorry!"
+    "MinutesUntilLevel": 17,
+    "SecondsUntilLevel": 39,
+    "LevelIndex": 446,
+    "Message": "THE KILN IS BACK!!! <br><br>AND WE HAVE ROOM CODES!"
   },
-  "fetchedAt": "2026-09-02T19:40:26.763624+00:00",
+  "fetchedAt": "2026-09-03T19:42:20.295475+00:00",
   "ok": true
 }
