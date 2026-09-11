@@ -1,13 +1,13 @@
 {
-  "dayIndex": 453,
+  "dayIndex": 454,
   "raw": {
     "VersionOkay": false,
     "HoursUntilLevel": 21,
-    "MinutesUntilLevel": 30,
-    "SecondsUntilLevel": 3,
-    "LevelIndex": 453,
+    "MinutesUntilLevel": 29,
+    "SecondsUntilLevel": 27,
+    "LevelIndex": 454,
     "Message": "THE KILN IS BACK!!! <br><br>AND WE HAVE ROOM CODES!"
   },
-  "fetchedAt": "2026-09-10T19:29:56.247392+00:00",
+  "fetchedAt": "2026-09-11T19:30:32.289478+00:00",
   "ok": true
 }
