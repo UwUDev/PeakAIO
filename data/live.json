@@ -1,13 +1,13 @@
 {
-  "dayIndex": 456,
+  "dayIndex": 457,
   "raw": {
     "VersionOkay": false,
-    "HoursUntilLevel": 21,
-    "MinutesUntilLevel": 44,
-    "SecondsUntilLevel": 33,
-    "LevelIndex": 456,
-    "Message": "THE KILN IS BACK!!! <br><br>AND WE HAVE ROOM CODES!"
+    "HoursUntilLevel": 20,
+    "MinutesUntilLevel": 9,
+    "SecondsUntilLevel": 2,
+    "LevelIndex": 457,
+    "Message": "if you had your bookworm badge deleted last week, SORRY ABOUT THAT!!!<br><br> check the patch notes for instructions on getting it back"
   },
-  "fetchedAt": "2026-09-13T19:15:26.239414+00:00",
+  "fetchedAt": "2026-09-14T20:50:56.842623+00:00",
   "ok": true
 }
