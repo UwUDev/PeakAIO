@@ -1,13 +1,13 @@
 {
-  "dayIndex": 460,
+  "dayIndex": 461,
   "raw": {
     "VersionOkay": false,
-    "HoursUntilLevel": 20,
-    "MinutesUntilLevel": 52,
-    "SecondsUntilLevel": 49,
-    "LevelIndex": 460,
+    "HoursUntilLevel": 21,
+    "MinutesUntilLevel": 30,
+    "SecondsUntilLevel": 10,
+    "LevelIndex": 461,
     "Message": "if you had your bookworm badge deleted last week, SORRY ABOUT THAT!!!<br><br> check the patch notes for instructions on getting it back"
   },
-  "fetchedAt": "2026-09-17T20:07:10.417994+00:00",
+  "fetchedAt": "2026-09-18T19:29:48.990943+00:00",
   "ok": true
 }
