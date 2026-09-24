@@ -1,13 +1,17 @@
 {
-  "dayIndex": 466,
+  "dayIndex": 467,
   "raw": {
     "VersionOkay": false,
     "HoursUntilLevel": 20,
-    "MinutesUntilLevel": 54,
-    "SecondsUntilLevel": 32,
-    "LevelIndex": 466,
-    "Message": "if you had your bookworm badge deleted last week, SORRY ABOUT THAT!!!<br><br> check the patch notes for instructions on getting it back^^^"
+    "MinutesUntilLevel": 39,
+    "SecondsUntilLevel": 52,
+    "LevelIndex": 467,
+    "Message": "if you had your bookworm badge deleted last week, SORRY ABOUT THAT!!!<br><br> check the patch notes for instructions on getting it back^^^",
+    "CrossplaySteam": true,
+    "CrossplayXbox": true,
+    "CrossplayPlayStation": true,
+    "CrossplaySwitch": true
   },
-  "fetchedAt": "2026-09-23T20:05:27.387257+00:00",
+  "fetchedAt": "2026-09-24T20:20:06.993284+00:00",
   "ok": true
 }
