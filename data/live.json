@@ -1,17 +1,17 @@
 {
-  "dayIndex": 470,
+  "dayIndex": 471,
   "raw": {
     "VersionOkay": false,
-    "HoursUntilLevel": 20,
-    "MinutesUntilLevel": 59,
-    "SecondsUntilLevel": 50,
-    "LevelIndex": 470,
-    "Message": "if you had your bookworm badge deleted last week, SORRY ABOUT THAT!!!<br><br> check the patch notes for instructions on getting it back^^^",
+    "HoursUntilLevel": 18,
+    "MinutesUntilLevel": 31,
+    "SecondsUntilLevel": 31,
+    "LevelIndex": 471,
+    "Message": "bing bong is a father of two",
     "CrossplaySteam": true,
     "CrossplayXbox": true,
     "CrossplayPlayStation": true,
     "CrossplaySwitch": true
   },
-  "fetchedAt": "2026-09-27T20:00:09.347643+00:00",
+  "fetchedAt": "2026-09-28T22:28:27.632042+00:00",
   "ok": true
 }
