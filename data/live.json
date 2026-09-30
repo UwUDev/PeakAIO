@@ -1,17 +1,17 @@
 {
-  "dayIndex": 472,
+  "dayIndex": 473,
   "raw": {
     "VersionOkay": false,
     "HoursUntilLevel": 19,
-    "MinutesUntilLevel": 40,
-    "SecondsUntilLevel": 29,
-    "LevelIndex": 472,
+    "MinutesUntilLevel": 39,
+    "SecondsUntilLevel": 0,
+    "LevelIndex": 473,
     "Message": "bing bong is a father of two",
     "CrossplaySteam": true,
     "CrossplayXbox": true,
     "CrossplayPlayStation": true,
     "CrossplaySwitch": true
   },
-  "fetchedAt": "2026-09-29T21:19:30.478476+00:00",
+  "fetchedAt": "2026-09-30T21:20:59.283176+00:00",
   "ok": true
 }
