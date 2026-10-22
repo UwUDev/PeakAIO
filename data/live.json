@@ -1,17 +1,17 @@
 {
-  "dayIndex": 494,
+  "dayIndex": 495,
   "raw": {
     "VersionOkay": false,
     "HoursUntilLevel": 20,
-    "MinutesUntilLevel": 30,
-    "SecondsUntilLevel": 13,
-    "LevelIndex": 494,
-    "Message": "bing bong is a father of two",
+    "MinutesUntilLevel": 32,
+    "SecondsUntilLevel": 22,
+    "LevelIndex": 495,
+    "Message": "PEAK is finally out on consoles (with crossplay!) Have fun, scouts! Let us know if anything breaks!!!",
     "CrossplaySteam": true,
     "CrossplayXbox": true,
     "CrossplayPlayStation": true,
     "CrossplaySwitch": true
   },
-  "fetchedAt": "2026-10-21T20:29:45.490680+00:00",
+  "fetchedAt": "2026-10-22T20:27:37.588666+00:00",
   "ok": true
 }
