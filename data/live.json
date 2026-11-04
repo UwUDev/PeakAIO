@@ -1,17 +1,17 @@
 {
-  "dayIndex": 507,
+  "dayIndex": 508,
   "raw": {
     "VersionOkay": false,
     "HoursUntilLevel": 18,
-    "MinutesUntilLevel": 44,
-    "SecondsUntilLevel": 51,
-    "LevelIndex": 507,
+    "MinutesUntilLevel": 29,
+    "SecondsUntilLevel": 50,
+    "LevelIndex": 508,
     "Message": "PEAK is finally out on consoles (with crossplay!) Have fun, scouts! Let us know if anything breaks!!!",
     "CrossplaySteam": true,
     "CrossplayXbox": true,
     "CrossplayPlayStation": true,
     "CrossplaySwitch": true
   },
-  "fetchedAt": "2026-11-03T22:15:07.623420+00:00",
+  "fetchedAt": "2026-11-04T22:30:09.405973+00:00",
   "ok": true
 }
